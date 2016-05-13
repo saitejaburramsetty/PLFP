@@ -1,0 +1,15 @@
+This mini-interpreter is for R language
+
+Take the input on in integer.
+It will do a+b,a-b,a*b,a/b,a%b,a^b
+
+>-2+#
+[out] Invalid input see the ending
+>2+  
+[out] Invalid input see the ending
+>-3+2           
+[out] -1.0
+>2^3
+[out] 8.0
+--------------------------------------------
+To run the code Python interpreter.py
