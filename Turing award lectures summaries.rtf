@@ -1,0 +1,266 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fdecor\fcharset0 Calibri;}{\f1\fnil\fcharset0 NimbusRomNo9L-Regu;}{\f2\fswiss\fcharset0 Arial;}{\f3\fnil\fcharset0 Calibri;}{\f4\froman\fcharset0 Times New Roman;}{\f5\froman\fcharset0 Times-Roman;}}
+{\colortbl ;\red255\green255\blue255;}
+{\*\generator Riched20 10.0.10586}\viewkind4\uc1 
+\pard\widctlpar\sa200\sl276\slmult1\kerning2\f0\fs40\lang9\par
+           Summaries of Turing Award Lectures\par
+\par
+\fs32 1\b . \fs28 Programming the world of uncertain things\b0\par
+
+\pard\widctlpar                          As developers face pervasive correctness, programmability and optimization problems due to estimates. Therefore,most programming languages make these problems worse. In this paper, a new programming abstraction called Uncertain(T) was embedded into languages, such as C#, C++, Java, Python, and JavaScript. Also demonstrated the substantial programmability, correctness, and efficiency benefits of this programming model for GPS sensor navigation, approximate computing, machine learning, and xBox\f1\fs18 .\par
+
+\pard\widctlpar\sa200\sl276\slmult1\f0\fs28\par
+
+\pard\widctlpar\b 2.  The Hardness of Data packing \par
+                  \b0 Data packing is a challenging and important problem for today\rquote s\par
+block-based, highly associative caches. This problem is defined in this paper for an arbitrary number of cache blocks and packing factor and shown that  using a reduction from 3SAT that even for a 5-block cache, an approximate data packing solution cannot be efficiently computed, unless P = NP. Furthermore, it is also shown that  by reducing from 2SAT-MIN-DEL, that even for a 3-block cache, the existence of a constant factor approximation algorithm disproves a well-known conjecture. In contrast, this paper also explains that if, instead of minimizing cache misses, we aim at maximizing cache hits, the data packing problem will admit a constant factor approximation algorithm.\f1\fs18\lang16393\par
+\b\f2\fs28\par
+3.  \f0 Printing floating point numbers\par
+                    \b0 Floating-point numbers are an essential part of modern software, recently gaining particular prominence on the web as the exclusive numeric format of Javascript. And to use floating-point numbers, we require a way to convert binary machine representations into human readable decimal outputs.  The classic Dragon4 algorithm and its later refinements achieve completeness i.e. produce correct and optimal outputs on all inputs by using arbitrary precision integer (bignum) arithmetic which leads to a high performance cost. And the recent Grisu3 algorithm shows how to recover performance by using native integer arithmetic but sacrifices optimality for 0.5% of all inputs. In this paper Errol, a new complete algorithm that is guaranteed to produce correct and optimal results for all inputs by sacrificing a speed penalty of 2.4\'02 to the incomplete Grisu3 but 5.2 faster than previous complete methods\f1\fs18 .\b\f0\fs28                \par
+                      \par
+4.  Symbolic abstract data type inference\par
+                             \b0 Formal specification is a vital ingredient to scalable verification of software systems. This paper demontrates that effective symbolic ADT representations can be automatically generated from the executions of reference implementations.  This approach exploits two key features of naturally-occurring ADTs: violations can be decomposed into a small set of representative patterns and these patterns manifest in executions with few operations\f1\fs18 .\b\f0\fs28\par
+\par
+5.  Reducing crash recoverability to reachability\par
+                            \b0 From a verification perspective, crash recovery bugs can be particularly frustrating because even when it has been formally proved for a program that it satisfies a property, the proof is foiled by these external events that crash and restart the program. So This paper defines the automated tool at first for proving that programs correctly recover to their original behaviors in the event of externallyinduced crashes, via a novel reduction of termination and simulation to reachability. It has also been proved that the work is sound and have experimentally validated it on several examples drawn from industrial systems\b                        \par
+\par
+6.  Type theory in type theory using quotient inductive types\par
+                  \b0 An internal formalisation of a type theory was presented in this paper with dependent types in Type Theory using a special case of higher inductive types from Homotopy Type Theory which we call quotient inductive types (QITs) and the  formalisation of the type theory avoids referring to preterms or a typability relation but defines directly well typed objects by an inductive definition. Here Elimination principle is also used to define the set-theoretic and logical predicate interpretation\f1\fs18 .\b\f0\fs28\par
+\par
+7.  Binding as sets of scopes\par
+              \b0 Hygienic macro expansion is a successful, decades-old technology\par
+in Racket and the broader Scheme community. In this paper,a new macro expander for Racket builds on a novel approach to hygiene. And instead of basing macro expansion on variable renamings that are mediated by expansion history, the new expander tracks binding through a set of scopes that an identifier acquires from both binding forms and macro expansions. The resulting model of macro expansion is simpler and more uniform than one based on renaming. And also it is sufficiently compatible with Racket\rquote s old expander to be practical.\b\par
+\par
+8.  The complexity of interaction\par
+                 \b0 In this paper, The complexity of functional programs was\par
+written in the interaction-net computation model, an asynchronous,\par
+parallel and confluent model that generalizes linear-logic proof nets.The provided analysis is precise, compositional and in theory, it's not restricted to particular complexity classes\b               \par
+\par
+9.  Algorithmic analysis of qualitative and quantitative temination problems for affline probabilistic programs\par
+                \b0 In this paper, Termination of probabilistic programs with real-valued variables was considered. Also it defined the notion of ranking supermartingales which is a powerful approach for proving termination of probabilistic programs. In detail, it focusses on the algorithmic synthesis of linear ranking-supermartingales over affine probabilistic programs (APP\rquote s) with both angelic and demonic non-determinism\b\par
+\par
+10.  Flashmeta: a framework for inductive program synthesis\f3\par
+
+\pard                             \kerning0\b0 We know that many PBE algorithms are a natural fall-out of one generic meta-algorithm and the domain- specific properties of the operators in the underlying domain-specific language (DSL).Through this observation, it enables a novel program synthesis methodology called data-driven domain-specific deduction (D4), where domain-specific insight provided by the DSL designer is separated from the synthesis algorithm.  The FlashMeta framework implements this methodology allowing synthesizer developers to generate an efficient synthesizer from the mere DSL definition (if properties of the DSL operators have been modelled).\kerning2\b\par
+
+\pard\widctlpar\f0\par
+11.  Disproving termination with overapproximation\par
+                  \b0 Overapproximation is the workhorse of program analysis. Unfortunately, overapproximation can invalidate conventional\par
+techniques for disproving termination. In this paper, The notion of a live abstraction was introduced to show that how overapproximation can help, not hinder nontermination proving where the idea is to prove the existence of a closed recurrence set rather than simply a recurrence set. This modification in strategy allows us to use off-the-shelf overapproximating abstractions, leading to a new set of methods for disproving termination of real programs.\b\par
+\par
+12 . Failure and fault analysis for software debugging\par
+                 \b0 In this paper,  a new model for analyzing software failures and faults was proposed which is\b  \b0 different from most studies of failures and faults that only provide categorized information by classifying failures and faults.\b           \par
+\par
+13.  Modularization around a suitable abstraction\par
+                    \b0 Suitable modularization is a good programming practice. This paper describes the following topics in crisp: Data abstraction, modularization,procedural abstraction\b                \par
+\par
+14.  Debugging with dynamic slicing and backtracking\par
+                         \b0 We know that Programmers spend considerable time debugging code. This paper discusses a debugging paradigm which is based on dynamic program slicing and execution backtracking techniques that easily lends itself to automation. This paradigm is based on experience with using these techniques to debug software.  A prototype debugging tool, Spyder was also presented that explicitly supports the proposed paradigm and with which we are performing further debugging research.\b                         \par
+                                        \par
+\par
+15.  Transferring skills at solving word problems from computing to algebra through bootstrap\par
+                             \b0 Bootstrap is a computing curriculum that was designed to reinforce specification C learning objectives in algebra. This paper describes three key features of the curriculum and also the algebraic concepts that they reinforce. Bootstrap's programming model and choice of programming language allow students to directly apply problem-solving processes for programming to standard problems in algebra.\b\par
+\par
+16.  Temporal property verification as a program analysis task\par
+                 \b0 A novel temporal reasoning technique was introduced in this paper for (potentially infinite state) transition systems, with an implementation designed for systems described as programs. Our approach shifts the task of temporal reasoning to a program analysis problem and when an analysis is performed on the output of our encoding, it is effectively reasoning about the temporal and possibly branching behaviors of the original system. Consequently, we can use the wide variety of efficient program analysis tools to prove properties of programs\b            \par
+\par
+17.  Testing vs static analysis of maximum stack size\par
+
+\pard                       \kerning0\b0\f3 For event-driven software on resource-constrained devices,\par
+Estimates of the maximum stack size can be of paramount importance.\kerning2\b  \kerning0\b0 In this paper,Testing was used to evaluate the state-of-the-art static analysis of maximum stack size for event-driven assembly code. Firstly, we note that the state-of-the-art testing approach achieves a maximum stack size that is only 67 percent of that achieved by static analysis. Then we present better testing approaches and use them to demonstrate that the static analysis is near optimal for our benchmarks.\kerning2\b                 \par
+
+\pard\widctlpar\par
+\f0 18.  Systematic design of program transformation frameworks by abstract interpretation\f3\par
+
+\pard                                    \kerning0\b0 A general uniform language-independent framework\par
+was discussed in this paper for designing online and offline source-to-source program transformations by abstract interpretation of program semantics. Iterative source-to-source program transformations are designed constructively by composition of source-to-semantics, semantics-totransformed semantics and semantics-to-source abstractions applied to fixpoint trace semantics. The correctness of the transformations is expressed through observational and performance abstractions. Also the framework is illustrated on three examples: constant propagation, program specialization by online and offline partial evaluation and static program monitoring\kerning2\b\f0\par
+
+\pard\widctlpar\par
+19.  An abstract interpretation framework for termination\f3\par
+
+\pard                              \kerning0\b0 Proof, verification and analysis methods for termination\par
+all rely on two induction principles:  \par
+1.  A variant function or induction on data ensuring progress towards the end ,  For this,it was discussed that this design principle applies equally well to potential and definite termination \par
+2. Some form of induction on the program structure. And for this, there introduced a generalization of the syntactic notion of structural\par
+induction (as found in Hoare logic) into a semantic structural induction\par
+based on the new semantic concept of inductive trace cover covering\par
+
+\pard\widctlpar execution traces by segments, a new basis for formulating program properties\f1\fs16 .\kerning2\b\f0\fs28                    \par
+\par
+20.  The computing lexical semantics of syntagmatic relations\f3\par
+
+\pard                                   \kerning0\b0 This paper addressed the issue of syntagmatic\par
+expressions from a computational lexical semantic perspective.  From a representational viewpoint,  it was also argued for a hybrid approach that combines linguistic and conceptual paradigms, in order to account for the continuum we find in natural languages from free combining words to frozen expressions.\kerning2\b\f0\par
+
+\pard\widctlpar\par
+21.  Systematic design of program analysis frameworks\b0\par
+                         Semantics analysis of programs is essential in optimizing Compilers & Program verification systems.  It encompasses data flow analysis, data type determination , generation of approximate invariant assertions etc..,   This paper is devoted to the systematic and correct design of program analysis frameworks with respect to a formal semantics.                     \b\par
+\par
+22.  A framework for relating syntactic and semantic model differences\par
+
+\pard              \cf1\kerning0\b0\f3 n         \cf0 Model differencing is an important activity in model-based development processes.\cf1 l\cf0 A language independent, abstract framework was defined  which relates syntactic change operations and semantic difference witnesses. We formalize fundamental relations of necessary and sufficient sets of change operations and analyze their properties. We further demonstrate concrete instances of the framework for three different popular modeling languages, namely, class diagrams, activity diagrams, and feature models. The framework provides a novel foundation for combining syntactic and semantic differencing.\cf1 inguis\f4\fs19 tic and\par
+conceptual paradigms, in order\cf0\kerning2\b\f0\fs28\par
+
+\pard\widctlpar\par
+23.  Fully reflexive intensional \lang9 type analysis in type erasure semantics\par
+
+\pard                          \kerning0\b0\f3 Compilers for polymorphic languages must support runtime type analysis over arbitrary source language types for coding applications like garbage collection, dynamic linking, pickling, \i etc.., \i0 This paper presents a framework that supports the analysis of arbitrary source language types while the handling of polymorphic and existential types appears adequate, problems remain open in the treatment of recursive types in our source language. The framework does not rely on explicit type passing instead, term level representations of types are passed at runtime. This allows the use of term level constructs to handle type information at runtime.\kerning2\b\par
+
+\pard\widctlpar\f0\par
+24.  A dataflow language for scriptable debugging\b0\i\f3\par
+
+\pard                             \kerning0\i0 We know that debugging is a laborious, manual activity that often involves the repetition of common operations. This paper describes the design of a language for scripting debuggers. The language offers powerful primitives that can precisely and concisely capture many important debugging and comprehension metaphors. The paper also describes a debugger for the Java language built in accordance with these principles. We have implemented this debugger to run alongside the Java Virtual Machine. The paper includes concrete examples of applying this debugger to programs.\kerning2\par
+
+\pard\widctlpar\b\f0\par
+25.  Multilingual component programming in Racket\f3\par
+
+\pard                    \kerning0\b0 In the world of Racket, software systems consist of interoperating components in different programming languages.This paper will present the ideas behind Racket:  language-specific components, the composition of components, and, most importantly, the rich support for building languages\f5\fs20 .\kerning2\b\f0\fs28\par
+
+\pard\widctlpar\par
+26.  Computational aspects of analyzing software network dynamics\f3\par
+
+\pard                           \kerning0\b0 Motivated by the applications such as the spread of epidemics and the propagation of influence in social networks, a formal model was proposed in this paper for analyzing the dynamics of such networks which is a stochastic version of discrete dynamical systems. By using this model, we formulate and study the computational complexity of two fundamental problems (called reachability and predecessor existence problems) which arise in the context of social networks. We also point out the implications ofour results on other computational models such as Hopfield networks, communicating finite state machines and systolic arrays.\kerning2\b\par
+
+\pard\widctlpar\f0\par
+27.  Probablistic covert channels: to close or not to close?\f3\par
+
+\pard                      \kerning0\b0 Here in this paper,  a new notion of security was developed against timing attacks where the attacker is able to simultaneously observe the execution time of a program and the probability of the values of low variables.  Then an algorithm was proposed which computes an estimate of the security of a program with respect to this notion in terms of timing leakage and shows how to use this estimate for cost optimisation.\kerning2\b               \f0\par
+
+\pard\widctlpar\par
+28.  Eliminating read barriers through procastination and cleanliness\f3\par
+
+\pard                            \kerning0\b0 Managed languages use read barriers to interpret the  forwarding pointers that were introduced to keep track of copied objects.In this paper, we consider the design of a managed runtime that avoids the need for read barriers. Our design is premised on the availability of a sufficient degree of concurrency to stall operations that would otherwise necessitate the copy\kerning2\b\f0\par
+
+\pard\widctlpar\par
+29.  Computing clock skew schedules under normal process variation\b0\f3\par
+
+\pard                                \kerning0 As technology progresses, Non-statistical timing analysis requires an increasing amount of conservatism to guarantee worst-case behavior that leads to designs whose manufactured behavior differs significantly from the predictions of design tools. In this paper,\par
+a new  technique was designed for generating clock skew schedules based on a statistical model of timing and also described a computationally tractable but accurate approximation and use the conjugate gradient minimization to efficiently compute a schedule to maximize the yield for a target clock period\kerning2\b\f0\par
+
+\pard\widctlpar\par
+30.  The complexity of planar counting problems\b0\par
+                       NP- hardness of the counting problems which are associated with the various satisfiabilty graph and combinatorial problems when  restricted to planar instances were proved in this paper. These problems also include some of the aspects like minimum vertec cover,minimum domaining set and also the NP -completeness of the ambigous satisfiability problems was also proved in this paper. \par
+\b\par
+31.  Reversible combinatory logic\par
+
+\pard                           \kerning0\b0\f3 Combinatory logic is a variant of the  Lambda-calculus which maintains irreversibility. A reversible version rCL of Combinatory Logic was discussed where terms are enriched with a history part which allows us to uniquely replay every computational step.  Also taken an "application-oriented" approach and given prominence to the\par
+computation features of the lambda-calculus and the related theory of combinatory logic rather than their other important aspects as a foundation of mathematics and in their pure form.\par
+
+\pard\widctlpar\kerning2\b\par
+\f0 32.  A balance of power: expressive,analyzable controler programming\f3\par
+
+\pard                          \kerning0\b0 As we know that Programmable controllers for software-defined networks are far more flexible but this flexibility results in more opportunities for misconfiguration and greatly complicates analyzes. So in this paper a new network-programming paradigm was proposed that strikes a balance between expressive power and analysis  providing a highly analyzable core language while allowing the reuse of pre-existing code written in more complex production languages. As the first step,we have created FlowLog, a declarative language for programming SDN controllers and also shown that FlowLog is expressive enough to build some real controller programs. It's also a finite-state language and thus amenable to many types of analysis such as model-checking\par
+
+\pard\widctlpar\kerning2\b\f0\par
+33.  Testing atomicity of composed concurrent operations\f3\par
+
+\pard                    \kerning0\b0 Here the problem of testing atomicity of composed\par
+concurrent operations was addressed  .They have presented a modular and effective technique for testing composed concurrent operations which uses a specialized adversary that leverages commutativity information of the underlying collections to guide execution towards linearizability violations\f1\fs20 .\kerning2\b\f0\fs28\par
+
+\pard\widctlpar\par
+34.  Abstract semantic differencing via speculative correlation\f3\par
+
+\pard                   \kerning0\b0  The problem of computing semantic differences\par
+between a program and a patched version of the program was addressed in this paper . The main motive of this paper is to obtain a precise characterization of the difference between program versions or establish their equivalence.  So they focussed on infinite-state numerical programs and use abstract interpretation to compute an overapproximation of program differences. Also presented a new abstract interpretation approach for program equivalence and differencing which is purely static that can prove equivalence and characterize differences for program with loops and does not rely heavily on syntactic similarity to establish program correlation. The main idea is to use a speculative correlation algorithm that guides the interleaving of the two programs based on the abstract difference between them.\kerning2\b\par
+
+\pard\widctlpar\f0\par
+35.  Optimization coaching\par
+
+\pard                     \kerning0\b0\f3 Optimizing compilers map programs in high-level languages\par
+to high-performance target language code. In this paper, they have identified an unfilled niche in the programming ecosystem\lang16393  \lang9 feedback from the compiler\rquote s optimizer that concerns successes and failures of specific optimizing transformations. The first optimization coach operates at compile time and provides detailed  program-specific information about the optimizer\rquote s actions and omissions\f1\fs20 .\kerning2\b\f0\fs28\par
+
+\pard\widctlpar\par
+36.  Transforming spread sheet datatypes using examples\par
+
+\pard                          \kerning0\b0\f3 In this paper, an important subset of the data cleaning problem namely data type transformations was identified. These data types are present in many spreadsheets and databases. And also transforming them presents a big challenge for both developers and endusers as they are often present in multiple formats some of which may not be known a priori.\kerning2\b\f0\par
+
+\pard\widctlpar\par
+37.  State-transition machines for lambda-calculus expressions\f3\par
+
+\pard                          \kerning0\b0 The process of compiler generation from lambda-calculus definitions was studied in this paper. Compiling schemes from STM-interpreters were constructed for three semantic definitions: \par
+ an explicitly contrived interpreter, an existing machine whose control structure was altered and a higher-order definition upon which two significant transformations were performed. The major intention is to utilize the STM-interpreter format to expose the structure of each definition and to promote an easy conversion to an SDTS.\kerning2\b\f0\par
+
+\pard\widctlpar\par
+38.  Features and object capabilities(reconciling two visions of \par
+modularity)\f3\par
+
+\pard                        \kerning0\b0 To erect safeguards against intrusion by other components, Object-capability systems have been particularly prominent for enabling encapsulation in such contexts. In this paper, they have described the program structures dictated by object capabilities and compare these against those that ensue from feature-oriented programming. It is also mentioned that the scalability offered by the latter appears to clash with the precision of authority designation demanded by the former. In addition to presenting this position from first principles, they have illustrated it with a case study and then offered a vision of how this conflict might be reconciled and discuss some of the issues that need to be considered in bridging this mismatch. Finally their findings suggest a significant avenue for research at the intersection of software engineering and security.\par
+
+\pard\widctlpar\kerning2\b\f0\par
+\par
+39.  Semantics of transactional memory and automatic mutual exclusion\f3\par
+
+\pard                        \kerning0\b0 The present exploration of language constructs represents the foundation for ongoing work on programming with transactional memory. Understanding the semantics of the constructs and the related tradeoffs has proven both challenging and worth while. For this a type system was discussed in this paper and analyzed its characteristic "yielding" behaviour . With this type system, the caller of a function obtains static information on whether the function may yield and therefore commit.\kerning2\b\par
+
+\pard\widctlpar\f0\par
+40.  Type-directed completion of partial expressions\par
+
+\pard                   \kerning0\b0\f3 Modern programming frameworks such as those found in Java\par
+and .NET consist of a huge number of classes which were organized into many namespaces. This paper has shown that the type-directed completion of partial expressions can effectively fill in short code snippets that are complicated enough to be difficult to discover using code completion.\kerning2\b\par
+
+\pard\widctlpar\par
+\f0 41.  Self-representation in Girad's system U\kerning0\b0\f3\par
+
+\pard                           A question has been arised that whether a meaningful notion of typed self-representation is possible for a language with decidable type checking . The answer was discussed in this paper in the affirmative by presenting the first typed self-representation for a lambda-calculus with decidable type checking. Our calculus is System U which was introduced in Girard\rquote s PhD thesis . They have embedded the representations of types into representations of terms which enable operations like CPS transformation that change the type of a term\f1\fs18 . \par
+
+\pard\widctlpar\kerning2\b\f0\fs28\par
+42.  Generating compiler optimizations form proofs\f3\par
+
+\pard                              \kerning0\b0 An automated technique was generated for compiler optimizations from examples of concrete programs before and after\par
+improvements have been made to them. The key technical insight\par
+of the technique is that a proof of equivalence between the original\par
+and transformed concrete programs informs us which aspects of the\par
+programs are important and which can be discarded and also it\par
+therefore uses these proofs which can be produced by translation\par
+validation or a proof-carrying compiler as a guide to generalize the original and transformed programs into broadly applicable optimization rules. This paper also presented a category-theoretic formalization of the proof generalization technique. This abstraction makes our technique applicable to logics besides our own. In particular they have demonstrate how the technique can also be used to learn query optimizations for relational databases or to aid programmers in debugging type errors. Finally, it was discovered that the technique enables programmers to train a compiler with application-specific optimizations by providing concrete examples\kerning2\b\f0\par
+
+\pard\widctlpar\par
+43.  Breaking through the normalization barrier: a self-interpreter for F-\par
+Omega\par
+
+\pard                         \kerning0\b0\f3 In this paper they have gone through the normalization\par
+barrier and defined a self-interpreter for System F\i !\i0 , a strongly normalizing \i lambda\i0 -calculus. After a careful analysis of the classical theorem, it have been shown that the static type checking in F\i ! \i0 can exclude the proof\rquote s diagonalization gadget leaving open the possibility for a self-interpreter. Along with the self-interpreter, they have programmed four other operations in F\i !\i0 , including a continuation-passing style transformation. The operations rely on a new approach to program representation that may be useful in theorem provers and compilers.\kerning2\b\par
+
+\pard\widctlpar\f0\par
+44.  Race directed scheduling of concurrent programs\f3\par
+
+\pard                        \kerning0\b0 In this paper Racageddon implements a new technique that we normally call race directed scheduling. The experiments shown that the  race directed scheduling is efficient and useful and ultimately that a combination of techniques is currently the best path to successful race detection.\kerning2\b\par
+
+\pard\widctlpar\f0\par
+45.  On protection by layout randomization\f3\par
+
+\pard               \kerning0\b0 Layout randomization is a powerful, popular technique\par
+for software protection. However, their theorems which have been defined in this paper do not explicitly mention resource bounds or probabilities and didn't focus on integrity properties. Because these theorems basically pertain to the protection\lang16393  \lang9 by obfuscation or typing\lang16393  \lang9 of a program from a potentially dangerous input. Also they have considered more general attackers which were represented by arbitrary contexts and also treat program equivalences capturing not only integrity but also secrecy properties. Despite these substantial differences, this paper also shared their goal of understanding randomization in the context of programming languages and their implementations.\kerning2\b\par
+
+\pard\widctlpar\f0\par
+46.  Efficient may happen in parallel analysis for Async-finish parallelism\f3\par
+
+\pard                        \kerning0\b0 For concurrent and parallel languages, the may-happen-inparallel (MHP) decision problem asks, given two actions in the program, if there is an execution in which they can execute in parallel. So for this they have have presented two algorithms in this paper for static may-happen-in-parallel analysis of X10 programs, including a linear-time algorithm for the MHP decision problem and a two-step algorithm for the MHP computation problem that runs in O(n : max(n; k)) time, where k is a statically determined upper bound on the number of pairs that may happen in parallel.\kerning2\b\par
+
+\pard\widctlpar\par
+\f0 47.  A syntactic approach to foundational proof-carrying code\par
+
+\pard                           \kerning0\b0\f3 We know that Proof-Carrying Code (PCC) is a general framework for verifying the safety properties of machine-language programs. In this paper, a syntactic approach to FPCC was discussed that avoids the difficulties of previous work. Under the new scheme, the foundational proof for a typed machine program simply consists of the typing derivation plus the formalized syntactic soundness proof for the underlying type system. A translation was also given in this paper from a typed assembly language into FPCC and demonstrated the advantages of our new system via an implementation in the Coq proof assistant.\par
+
+\pard\widctlpar\kerning2\b\f0\par
+48.  Symbolic computation of differential equivalences\f3\par
+
+\pard                    \kerning0\b0 As Ordinary differential equations (ODEs) are widespread in many natural sciences including chemistry, ecology and in systems biology and in disciplines such as control theory and electrical engineering. They have provided a generic framework for reasoning about languages in this paper that have ordinary differential equations (ODEs) as their quantitative semantics.  Also dicussed about three main principles which were borrowed from more traditional domains based on labeled transition systems or discrete-state stochastic processes such as Markov chains: program comparison and minimization are understood in terms of equivalence relations over the states of a program , partition-refinement algorithms can be used to compute the largest equivalences and SMT can be used for program verification.  They have worked on a basic intermediate language for ODEs. Conceptually, it can be seen as the analogous of a \ldblquote bytecode\rdblquote  format for higher-level languages where differential equivalences are compiler-optimization techniques that transform the original program while exactly preserving its behaviour.\kerning2\b\par
+
+\pard\widctlpar\par
+\f0 49.  A rewriting semantics for type inference\f3\par
+
+\pard                      \kerning0\b0 We know that when students first learn programming, they often rely on a simple operational model of a program\rquote s behaviour to explain how particular features work. In this paper, we begin to build the theoretical underpinnings for treating typechecking in a manner like the operational semantics of execution. Intuitively, each term is incrementally rewritten to its type in this work.\kerning2\b\par
+
+\pard\widctlpar\par
+\f0 50.  An overview of Ciao and its design philosophy\f3\par
+
+\pard\lang16393                             \kerning0\b0 This paper provides an overall description of the Ciao multiparadigm programming system emphasizing some of the novel aspects and motivations behind its design and implementation. The Ciao language is designed to be extensible in a simple and modular way. Another important aspect of Ciao is its programming environment in which it provides a powerful preprocessor (with an associated assertion language) capable of statically finding non-trivial bugs, verifying that the programs comply with specifications and performing many types of\par
+
+\pard\widctlpar optimizations (including automatic parallelization).\kerning2\b\par
+\b0\par
+\f0\fs24\par
+                           \lang9\par
+
+\pard\sa200\sl276\slmult1\kerning0\f3\fs22\par
+}
+ 
